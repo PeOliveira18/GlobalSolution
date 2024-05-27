@@ -1,0 +1,18 @@
+body{
+    background-image: linear-gradient(to right,#182452,#4E5C91);
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #39467C;
+    font-weight: bold;
+}
+
+a:hover{
+    color: white;
+}
