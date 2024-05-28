@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient(to right, #016599,#01C4D8 );
+    background-image: linear-gradient(to right, #01C4D8, #016599);
 }
 
 .container{
@@ -9,16 +9,18 @@ body{
 
 
 nav img{
+    margin-top: -2px;
     width: 100px;
     margin-left: 50px;
 }
 
 nav{
-    width: 100vw;
+    width: 95vw;
     display: flex;
     justify-content: space-between;
-    background-image: linear-gradient(to right, #23C9D2, #38A2A7);
-    padding: 30px;  
+    padding: 30px;
+    margin-top: 15px;
+    margin-left: 20px;  
 }
 
 nav ul li a{
@@ -27,6 +29,7 @@ nav ul li a{
     font-weight: bold;
     list-style: none;
     transition: all 0.5s;
+    margin-left: 30px;
 }
 
 a:hover{
@@ -62,21 +65,21 @@ nav ul{
 }
 
 .btn-outline{
-    border: 1px solid #087DDC;
+    border: 1px solid black;
     padding: 10px 15px;
     border-radius: 5px;
     color: #202A4E;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 
 .btn{
     text-decoration: none;
     color: #202A4E;
-    border: 1px solid #087DDC;
+    border: 1px solid black;
     background-color: #087DDC;
     border-radius: 5px;
     padding: 10px 15px;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 
 .btn-outline:hover{
@@ -95,4 +98,27 @@ nav ul{
 }
 .btn:active{
     opacity: 50%;
+}
+
+.icones{
+    margin-top: 15px;
+    margin-right: 100px;
+}
+.icones img{
+    width: 30px;
+}
+
+.problema{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.problema h2{
+    font-family: "Bebas Neue", sans-serif;
+    color: #202A4E;
+}
+
+.problema h3{
+    color: #202A4E;
 }
