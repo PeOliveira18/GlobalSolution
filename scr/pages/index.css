@@ -157,6 +157,51 @@ nav ul{
 }
 
 
+.problema{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.problema h1{
+    font-family: "Bebas Neue", sans-serif;
+    color: #202A4E;
+    font-weight: bolder;
+}
+
+.problema h2{
+    font-family: "Bebas Neue", sans-serif;
+    color: #202A4E;
+    font-size: 20px;    
+}
+
+.tecnologias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.tecnologias h2{
+    color: #202A4E;
+}
+
+
+.imagens{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.imagens img{
+    width: 500px;
+    max-width: 320px;
+    max-height: 300px;
+}
+
+
 figure:hover{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
@@ -171,7 +216,7 @@ figcaption{
     color: #202A4E;
     font: italic smaller sans-serif;
     padding: 3px;
-    text-align: center;
+    text-align: center;
 }
 
 
