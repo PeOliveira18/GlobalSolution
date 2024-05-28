@@ -1,18 +1,124 @@
 body{
-    background-image: linear-gradient(to right,#182452,#4E5C91);
+    background-image: linear-gradient(to right, #01C4D8, #016599);
 }
 
 .container{
     max-width: 1200px;
-    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
-header ul li a{
+
+nav img{
+    margin-top: -2px;
+    width: 100px;
+    margin-left: 50px;
+}
+
+nav{
+    width: 95vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    margin-top: 15px;
+    margin-left: 20px;  
+}
+
+nav ul li a{
     text-decoration: none;
-    color: #39467C;
+    color: #202A4E;
     font-weight: bold;
+    list-style: none;
+    transition: all 0.5s;
+    margin-left: 30px;
 }
 
 a:hover{
     color: white;
+}
+
+nav a:active{
+    opacity: 50%;
+}
+
+nav h1{
+    color: #202A4E;
+    margin-left: 10px;
+}
+
+nav li{
+    list-style: none;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    margin-right: 70px;
+}
+
+
+.linha{
+    border-left: 1px solid #202A4E;
+    height: 30px;
+}
+
+.btn-outline{
+    border: 1px solid black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #202A4E;
+    transition: all 0.3s;
+}
+
+.btn{
+    text-decoration: none;
+    color: #202A4E;
+    border: 1px solid black;
+    background-color: #087DDC;
+    border-radius: 5px;
+    padding: 10px 15px;
+    transition: all 0.3s;
+}
+
+.btn-outline:hover{
+    background-color: rgb(189, 184, 184);
+    color: #087DDC;
+}
+
+.btn:hover{
+    background-color: rgb(189, 184, 184);
+    color: #087DDC;
+}
+
+.btn-outline:active{
+    opacity: 50%;
+
+}
+.btn:active{
+    opacity: 50%;
+}
+
+.icones{
+    margin-top: 15px;
+    margin-right: 100px;
+}
+.icones img{
+    width: 30px;
+}
+
+.problema{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.problema h2{
+    font-family: "Bebas Neue", sans-serif;
+    color: #202A4E;
+}
+
+.problema h3{
+    color: #202A4E;
 }
