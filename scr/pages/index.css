@@ -3,10 +3,31 @@ body{
     overflow-x: hidden;
 }
 
-.container{
+header{
     max-width: 1200px;
     margin-bottom: 20px;
     margin-top: -20px;
+}
+
+body ul{
+    list-style: none;
+    font-size: 18px;
+    font-family:  "Lato", sans-serif;
+    color: #202A4E;
+}
+
+body h2{
+    font-family: "Bebas Neue", sans-serif;
+    color: #202A4E;
+    font-size: 25px;
+}
+
+body p{
+    font-family:  "Lato", sans-serif;
+}
+
+body a{
+    text-decoration: none;
 }
 
 
@@ -25,7 +46,7 @@ nav{
     margin-left: 20px;  
 }
 
-nav ul li a{
+nav a{
     text-decoration: none;
     color: #202A4E;
     font-weight: bold;
@@ -47,17 +68,14 @@ nav h1{
     margin-left: 10px;
 }
 
-nav li{
-    list-style: none;
-}
 
 nav ul{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
-    list-style: none;
     margin-right: 70px;
+    font-size: 15px;
 }
 
 .icones img:hover{
@@ -126,21 +144,12 @@ nav ul{
     font-weight: bolder;
 }
 
-.problema h2{
-    font-family: "Bebas Neue", sans-serif;
-    color: #202A4E;
-    font-size: 20px;    
-}
 
 .tecnologias{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
-}
-
-.tecnologias h2{
-    color: #202A4E;
 }
 
 
@@ -171,11 +180,6 @@ nav ul{
     font-weight: bolder;
 }
 
-.problema h2{
-    font-family: "Bebas Neue", sans-serif;
-    color: #202A4E;
-    font-size: 20px;    
-}
 
 .tecnologias{
     display: flex;
@@ -184,9 +188,6 @@ nav ul{
     margin-top: 30px;
 }
 
-.tecnologias h2{
-    color: #202A4E;
-}
 
 
 .imagens{
@@ -221,42 +222,37 @@ figcaption{
     text-align: center;
 }
 
-.objetivos{
+.conteudo-objetivos-beneficios {
     display: flex;
-    justify-content: flex-start;
-    margin-left: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
     margin-top: 20px;
-    color: #202A4E;
-    font-size: 18px;
-    font-family: "Lato", sans-serif;
+}
+
+.objetivos {
+    margin-left: 15px;
+}
+
+.beneficios {
+    display: flex;
+    align-items: center; 
+}
+
+.icone-direita {
+    position: absolute;
+    left: 45%;
+    margin-top: -15px;
+    
+    
+}
+
+.icone-direita img{
+    width: 150px;
 }
 
 
-.lista-objetivos ul{
-    list-style: none;   
-}
-
-.botao-objetivo{
-    margin-left: 100px;
-}
-
-#btn-doacao{
-    margin-top: 10px;
-    border: 1px solid black;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #087ddc77;
-    transition: all 0.3s;
-}
-
-#btn-doacao:hover{
-    background-color: rgba(224, 217, 217, 0.644);
-    color: #087DDC;
-}
-
-#btn-doacao:active{
-    opacity: 50%;
+.texto-beneficios {
+    margin-right: 15px;
 }
 
 .publico{
@@ -278,21 +274,107 @@ figcaption{
 }
 
 .personas img{
-    max-width: 200px;
-    max-height: 300px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
 }
 
-.personas ul{
-    list-style: none;
-}
-
-.persona{
+.descricao-persona{
     display: flex;
     justify-content: center;
-}
-
-.persona ul{
-    margin-left: 20px;
+    text-align: center;
     margin-top: 10px;
 }
+
+.personas img:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.impacto-dia {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.blocos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.bloco {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+
+.texto {
+    text-align: left;
+}
+
+.texto h3 {
+    color: #087DDC;
+    margin-bottom: 10px;
+}
+
+.texto p {
+    margin-top: 5px;
+}
+
+footer{
+    background-color: #202a4ee5;
+    height: 500px;
+    color: white;
+}
+
+footer h3{
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    padding: 20px 0;
+}
+
+footer a{
+    color: white;        
+}
+
+.rodape{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#btn-doacao {
+    margin-top: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #087ddc77;
+    transition: all 0.3s;
+    width: 150px;
+}
+
+#btn-doacao:hover {
+    background-color: rgba(224, 217, 217, 0.644);
+    color: #087DDC;
+}
+
+#btn-doacao:active {
+    opacity: 50%;
+}
+
+
+
+
+
+
+
+
+
