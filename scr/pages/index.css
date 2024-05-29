@@ -1,10 +1,12 @@
 body{
     background-image: linear-gradient(to right, #01C4D8, #016599);
+    overflow-x: hidden;
 }
 
 .container{
     max-width: 1200px;
     margin-bottom: 20px;
+    margin-top: -20px;
 }
 
 
@@ -219,5 +221,78 @@ figcaption{
     text-align: center;
 }
 
+.objetivos{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #202A4E;
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+}
 
 
+.lista-objetivos ul{
+    list-style: none;   
+}
+
+.botao-objetivo{
+    margin-left: 100px;
+}
+
+#btn-doacao{
+    margin-top: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #087ddc77;
+    transition: all 0.3s;
+}
+
+#btn-doacao:hover{
+    background-color: rgba(224, 217, 217, 0.644);
+    color: #087DDC;
+}
+
+#btn-doacao:active{
+    opacity: 50%;
+}
+
+.publico{
+    margin-top: 20px;
+}
+
+.titulo-publico{
+    display: flex;
+    justify-content: center;
+    color: #202A4E;
+}
+
+.personas{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    
+}
+
+.personas img{
+    max-width: 200px;
+    max-height: 300px;
+    width: 200px;
+}
+
+.personas ul{
+    list-style: none;
+}
+
+.persona{
+    display: flex;
+    justify-content: center;
+}
+
+.persona ul{
+    margin-left: 20px;
+    margin-top: 10px;
+}
