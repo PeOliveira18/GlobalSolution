@@ -174,13 +174,6 @@ nav ul{
     text-align: center;
 }
 
-.problema h1{
-    font-family: "Bebas Neue", sans-serif;
-    color: #202A4E;
-    font-weight: bolder;
-}
-
-
 .tecnologias{
     display: flex;
     flex-direction: column;
