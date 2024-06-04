@@ -16,13 +16,13 @@
             <nav>
                 <img src="/public/images/logo.png" alt="Logo OC20" class="img-logo">
                 <ul>
-                    <li><a href="#problemas">Problema</a></li>
-                    <li><a href="#tecnologias">Tecnologias</a></li>
-                    <li><a href="#objetivos">Objetivos</a></li>
-                    <li><a href="#beneficios">Beneficios</a></li>
-                    <li><a href="#publicos">Publico</a></li>
-                    <li><a href="#impactos">Impacto</a></li> 
-                    <li><a href="#doacao">Doacoes</a></li> 
+                    <li><a href="#problemas" onclick="trocaClasse('problemas')">Problema</a></li>
+                    <li><a href="#tecnologias" onclick="trocaClasse('tecnologias')">Tecnologias</a></li>
+                    <li><a href="#objetivos" onclick="trocaClasse('secaoObjetivos')">Objetivos</a></li>
+                    <li><a href="#beneficios" onclick="trocaClasse('beneficios')">Beneficios</a></li>
+                    <li><a href="#publicos" onclick="trocaClasse('publicos')"> Publico</a></li>
+                    <li><a href="#impactos" onclick="trocaClasse('impactos')">Impacto</a></li> 
+                    <li><a href="#doacao"  onclick="trocaClasse('doacao')">Doacoes</a></li> 
                     <li class="linha"></li>
                     <li><a href="/scr/pages/cadastro-login/cadastro.html" class="btn">Criar conta</a></li>                        
                     <li><a href="/scr/pages/cadastro-login/login.html" class="btn-login">Login</a></li>
@@ -61,7 +61,7 @@
 
         <section class="conteudo-objetivos-beneficios" id="objetivos">
             <div class="objetivos">
-                <div class="lista-objetivos">
+                <div class="lista-objetivos" id="secaoObjetivos">
                     <ul>
                         <li>Reducao da poluicao nos oceanos em 40% &#8987;</li>
                         <li>Preservacao da vida marinha &#8987;</li>
@@ -92,14 +92,10 @@
             <div class="titulo-publico">
                 <h2>Impactos na vida de pessoas</h2>
             </div>
-            <div class="personas">               
-                <img src="/public/images/persona-1.png" alt="Foto de uma pessoa afetada" title="Sofia">           
-            </div>
-            <div class="descricao-persona">
-                <ul>
-                    <li>Sofia Pereira - 28 anos</li>
-                    <li>Biologa Marinha - Trabalha em um centro de pesquisa marinha</li>
-                </ul>
+            <div class="carrosel" id="img">               
+                <img src="/public/images/persona-1.png" alt="Foto de uma pessoa afetada" title="Sofia">
+                <img src="/public/images/persona-2.png" alt="Foto de uma pessoa afetada" title="Marina">
+                <img src="/public/images/persona-3.png" alt="Foto de uma pessoa afetada" title="Ricardo">           
             </div>
         </section>
         <section class="impacto-dia" id="impactos">           
@@ -107,15 +103,15 @@
             <div class="blocos">
                 <div class="bloco">
                     <div class="texto">
-                        <h3>Sofia Pereira</h3>
-                        <p>Localização: PE, Recife</p>
-                        <p>Sofia precisa de ferramentas avançadas e dados precisos para monitorar os níveis de poluição e os impactos nas espécies marinhas. Ela quer implementar projetos de conservação eficazes.</p>
+                        <h3 id="nome">Sofia Pereira</h3>
+                        <p id="localizacao">Localização: PE, Recife</p>
+                        <p id="necessidade">Sofia trabalha como biologa marinha e precisa de ferramentas avançadas e dados precisos para monitorar os níveis de poluição e os impactos nas espécies marinhas. Ela quer implementar projetos de conservação eficazes.</p>
                     </div>
                 </div>
                 <div class="bloco">
                     <div class="texto">
                         <h3>Impactos</h3>
-                        <p>Com melhores tecnologias e dados detalhados sobre a qualidade da água, Sofia pode realizar pesquisas mais precisas, contribuindo para a conservação dos oceanos e a proteção da biodiversidade marinha.</p>
+                        <p id="impacto">Com melhores tecnologias e dados detalhados sobre a qualidade da água, Sofia pode realizar pesquisas mais precisas, contribuindo para a conservação dos oceanos e a proteção da biodiversidade marinha.</p>
                     </div>
                 </div>
             </div>          
@@ -171,5 +167,6 @@
     </footer>
     
 
+    <script src="/public/script/script.js"></script>
 </body>
 </html>
